@@ -4,11 +4,14 @@
 ---
 ### Table des matières :
 
-* <a href="#CONT"> Contexte du projet</a>
-* <a href="#OBJ">Objectifs du Projet</a>
-* <a href="#OBJP">Objectifs Personnels</a>
-* <a href="#LOGI"> Logiciels utilisés</a>
-* <a href="#ARC"> Architecture du projet</a>
+<!-- TOC START -->
+   [Table des matières :](#table-des-matières-)
+- [<cite><font color="#00506b"> Contexte du projet</font></cite>](#citefont-color00506b-contexte-du-projetfontcite)
+- [<cite><font color="#00506b"> Objectifs du projet</font></cite>](#citefont-color00506b-objectifs-du-projetfontcite)
+- [<cite><font color="#00506b"> Objectifs personnels</font></cite>](#citefont-color00506b-objectifs-personnelsfontcite)
+- [<cite><font color="00506b"> Logiciels utilisés</font></cite>](#citefont-color00506b-logiciels-utilisésfontcite)
+- [<cite><font color="00506b"> Architecture du projet</font></cite>](#citefont-color00506b-architecture-du-projetfontcite)
+<!-- TOC END -->
 ---
 
 <a id="CONT"></a>
