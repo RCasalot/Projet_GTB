@@ -44,39 +44,38 @@ Mon but durant ce projet est de développer la partie frontend du site internet.
 <a id="ARC"></a>
 ## <cite><font color="00506b"> Architecture du projet</font></cite>
 
-📦Projet GTB
-┗ 📂Code
-  ┣ 📂admin
-  ┃ ┣ 📜admin.php
-  ┃ ┣ 📜ajout.php
-  ┃ ┣ 📜ajouter_batiment.php
-  ┃ ┣ 📜ajouter_client.php
-  ┃ ┣ 📜compteadm.php
-  ┃ ┣ 📜confirmation_client.php
-  ┃ ┣ 📜confirmation.php
-  ┃ ┗ 📜users.php
-  ┣ 📂backend
-  ┃ ┣ 📜config.php
-  ┃ ┣ 📜dbcontroller.php
-  ┃ ┣ 📜login.php
-  ┃ ┣ 📜logout.php
-  ┃ ┣ 📜register.php
-  ┃ ┣ 📜style.css
-  ┃ ┗ 📜style2.css
-  ┣ 📂images
-  ┃ ┣ 🖼️fond.jpg
-  ┃ ┗ 🖼️smica.png
-  ┣ 📂responsable
-  ┃ ┣ 📜compteresp.php
-  ┃ ┣ 📜responsable.php
-  ┃ ┗ 📜update_consigne.php
-  ┣ 📂utilisateur
-  ┃ ┣ 📜compteuser.php
-  ┃ ┗ 📜utilisateur.php
-  ┣ 📜index.php
-  ┣ 📜index2.php
-  ┣ 📜mairie.sql
-  ┗ 📜registration.sql
+```markdown
+📦GTB
+ ┣ 📂admin
+ ┃ ┣ 📜acces_refuse.php
+ ┃ ┣ 📜admin.php
+ ┃ ┣ 📜ajout.php
+ ┃ ┣ 📜ajouter_batiment.php
+ ┃ ┣ 📜ajouter_client.php
+ ┃ ┣ 📜compteadm.php
+ ┃ ┣ 📜confirmation_client.php
+ ┃ ┣ 📜confirmation.php
+ ┃ ┣ 📜liste_capteurs.php
+ ┃ ┣ 📜liste_clients.php
+ ┃ ┗ 📜users.php
+ ┣ 📂backend
+ ┃ ┣ 📜config.php
+ ┃ ┣ 📜dbcontroller.php
+ ┃ ┣ 📜login.php
+ ┃ ┣ 📜logout.php
+ ┃ ┣ 📜style.css
+ ┃ ┗ 📜style2.css
+ ┣ 📂images
+ ┃ ┣ 📜fond.jpg
+ ┃ ┗ 📜smica.png
+ ┣ 📂responsable
+ ┃ ┣ 📜acces_refuse.php
+ ┃ ┣ 📜responsable.php
+ ┃ ┗ 📜update_consigne.php
+ ┣ 📂utilisateur
+ ┃ ┣ 📜acces_refuse.php
+ ┃ ┗ 📜utilisateur.php
+
 
 
 --- 
