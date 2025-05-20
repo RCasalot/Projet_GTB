@@ -1,0 +1,128 @@
+body {
+    background-image: url("../images/fond.jpg");
+    color: white;
+    font-family: Arial;
+  }
+  .box {
+    border: 1px solid #c4c4c4;
+    padding: 30px 25px 10px 25px;
+    background: white;
+    margin: 30px auto;
+    width: 360px;
+  }
+  h1.box-logo a {
+    text-decoration:none;
+  }
+  h1.box-title {
+    color: black;
+    background: #f8f8f8;
+    font-weight: 500;
+    padding: 15px 25px;
+    line-height: 30px;
+    font-size: 2em;
+    text-align:center;
+    margin: -27px -26px 26px;
+  }
+  .box-button {
+    border-radius: 6px;
+    background: #665264;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    height: 51px;
+    padding: 0;
+    color: #fff;
+    border: 0;
+    outline:0;
+  }
+  .box-button:hover {
+    background-color: #ef7620;
+  }
+  .box-register
+  {
+    text-align:center;
+    margin-bottom:0px;
+  }
+  .box-register a
+  {
+    text-decoration:none;
+    font-size:1em;
+    color: #007f66;
+  }
+  .box-input {
+    font-size: 1.1em;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    padding-left:10px;
+    border-radius: 5px;
+    width: 347px;
+    height: 50px;
+  }
+  .box-input:focus {
+      outline: none;
+      border-color:#6b8e23;
+  }
+  .succes{
+      text-align: center;
+      color: white;
+  }
+  .succes a {
+      text-decoration: none;
+    font-size: 1.2em;
+      color: white;
+  }
+  p.MessageErreur {
+      background-color: #e66262;
+      border: #AA4502 1px solid;
+      padding: 5px 10px;
+      color: #FFFFFF;
+      border-radius: 3px;
+  }
+  
+  img{
+    border-radius: 1em;
+  }
+  
+  .fond{
+    background-image:url("../images/fond.jpg");
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #37474f;
+    font-family: Arial;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-right: 5px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+    transition: all 250ms ease-in;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  .error{
+    color:white;
+  }
