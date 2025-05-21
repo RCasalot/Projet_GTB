@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Fiche Recette - Utilisateur GTB</title>
+    <title>Fiche Recette - Service GTB</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -72,7 +72,7 @@
 
 <div id="content-to-export">
     <div class="center">
-        <h1>📄 Fiche Recette - <strong>Utilisateur GTB</strong> 📄</h1>
+        <h1>📄 Fiche Recette - <strong>Service GTB</strong> 📄</h1>
         <p><strong>Réalisé par :</strong> Casalot Romain<br>
         <strong>Période :</strong> 28 Janvier 2025 - 23 Mai 2025</p>
     </div>
@@ -85,7 +85,7 @@
 
     <table>
         <tr><th>Élément</th><th>Détails</th></tr>
-        <tr><td><strong>Nom du projet</strong></td><td>Service GTB pour bâtiments communaux - Utilisateur</td></tr>
+        <tr><td><strong>Nom du projet</strong></td><td>Service GTB pour bâtiments communaux</td></tr>
         <tr><td><strong>Personne en charge</strong></td><td>Casalot Romain</td></tr>
     </table>
 
@@ -121,11 +121,20 @@
     </div>
 
     <p>
-    Concevoir et développer une interface utilisateur qui permettra :
+    Permettre à différents utilisateurs d'avoir un affichage différent selon le grade de la personne :
     </p>
     <ul>
-        <li>📊 Le visionnage des valeurs relevées par les capteurs</li>
-        <li>🔒 Sans aucune possibilité de modification des consignes</li>
+        <li>🔑 Un "Administrateur" pourra :
+            <ul>
+                <li>Créer des bâtiments</li>
+                <li>Assigner des capteurs à ces bâtiments</li>
+                <li>Créer de nouveaux clients en prenant leurs informations</li>
+                <li>Gérer les utilisateurs et en ajouter de nouveaux si nécessaire</li>
+            </ul>
+        </li>
+        <li>👨‍💼 Un "Responsable de site" pourra voir les températures actuelles et pourra gérer le chauffage sur le dashboard</li>
+        <li>👤 Un simple utilisateur pourra uniquement consulter les températures</li>
+        <li>📱 Créer une interface responsive grâce au CSS pour s'adapter à tous les appareils (ordinateurs, tablettes, smartphones)</li>
     </ul>
 
     <hr>
@@ -138,11 +147,13 @@
         <tr>
             <th>Tâche ou Livrable</th><th>Propriétaire</th><th>Statut</th><th>Remarques</th>
         </tr>
-        <tr><td>Connexion à la base de données</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Rédaction des différents documents et diagrammes</td><td>Casalot Romain</td><td>⏳ EN COURS</td><td></td></tr>
         <tr><td>Conception de l'interface utilisateur</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>Développement de l'interface</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>Développement des tableaux d'affichage des valeurs</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Développement des interfaces</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
         <tr><td>Style et responsivité</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Intégration avec le backend</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>1ère phase de tests et validation</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>2nde phase de tests et validation</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
     </table>
 
     <hr>
@@ -152,7 +163,7 @@
     </div>
 
     <p>
-    Le module utilisateur du projet GTB a été entièrement conçu, développé et validé. Il permet aux utilisateurs de consulter facilement les données des capteurs à travers une interface intuitive et responsive, sans possibilité de modifier les consignes. Tous les objectifs définis ont été atteints.
+    Le projet de Service GTB pour bâtiments communaux a été conçu et développé avec succès. Le système permet maintenant une gestion différenciée selon les rôles des utilisateurs : les administrateurs peuvent gérer les bâtiments, capteurs et utilisateurs; les responsables peuvent visualiser et ajuster les paramètres de chauffage; et les utilisateurs standards peuvent consulter les données de température. L'interface responsive s'adapte parfaitement à tous les types d'appareils, offrant une expérience utilisateur optimale sur ordinateurs, tablettes et smartphones. La majorité des objectifs ont été atteints, avec seulement la finalisation de la documentation technique encore en cours. Les deux phases de tests ont validé le bon fonctionnement du système dans les environnements cibles.
     </p>
 </div>
 
@@ -162,7 +173,7 @@
         // Définir les options pour html2pdf
         var options = {
             margin: 10,
-            filename: 'Fiche_Recette_Utilisateur_GTB.pdf',
+            filename: 'Fiche_Recette_Service_GTB.pdf',
             image: { type: 'jpeg', quality: 0.98 },
             html2canvas: { scale: 2, useCORS: true },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
