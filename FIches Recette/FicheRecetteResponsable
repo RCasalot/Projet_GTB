@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche Recette - Responsable GTB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #eee;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .center {
+            text-align: center;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        .export-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .export-button:hover {
+            background-color: #45a049;
+        }
+        @media print {
+            .export-button {
+                display: none;
+            }
+        }
+    </style>
+    <!-- Inclure la bibliothèque html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Bouton d'exportation PDF -->
+<button class="export-button" id="exportPDF">
+    📄 Exporter en PDF
+</button>
+
+<div id="content-to-export">
+    <div class="center">
+        <h1>📄 Fiche Recette - <strong>Responsable GTB</strong> 📄</h1>
+        <p><strong>Réalisé par :</strong> Casalot Romain<br>
+        <strong>Période :</strong> 28 Janvier 2025 - 23 Mai 2025</p>
+    </div>
+
+    <hr>
+
+    <div class="center">
+        <h2>1. Informations Générales</h2>
+    </div>
+
+    <table>
+        <tr><th>Élément</th><th>Détails</th></tr>
+        <tr><td><strong>Nom du projet</strong></td><td>Service GTB pour bâtiments communaux - Responsable</td></tr>
+        <tr><td><strong>Personne en charge</strong></td><td>Casalot Romain</td></tr>
+    </table>
+
+    <hr>
+
+    <div class="center">
+        <h2>2. Environnement de Test</h2>
+    </div>
+
+    <ul>
+        <li><strong>Navigateurs</strong> : Chrome, Edge, Firefox, Safari</li>
+        <li><strong>Appareils</strong> : iPhone 15 Pro, iPhone XR</li>
+        <li><strong>Langages utilisés</strong> : PHP, SQL, HTML, CSS, JavaScript</li>
+    </ul>
+
+    <hr>
+
+    <div class="center">
+        <h2>3. Défis Techniques</h2>
+    </div>
+
+    <p>
+    Concevoir et développer une interface responsable qui permettra :
+    </p>
+    <ul>
+        <li>📊 Le visionnage des valeurs relevées par les capteurs</li>
+        <li>🔧 La modification des valeurs des consignes</li>
+    </ul>
+
+    <hr>
+
+    <div class="center">
+        <h2>4. Suivi des Tâches</h2>
+    </div>
+
+    <table>
+        <tr>
+            <th>Tâche ou Livrable</th><th>Propriétaire</th><th>Statut</th><th>Remarques</th>
+        </tr>
+        <tr><td>Connexion à la base de données</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Conception de l'interface responsable</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Développement de l'interface</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Style et responsivité</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <tr><td>Ajout des modifications de consigne</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+    </table>
+
+    <hr>
+
+    <div class="center">
+        <h2>5. Conclusion</h2>
+    </div>
+
+    <p>
+    Le module responsable du projet GTB a été entièrement conçu, développé et validé. Il permet aux responsables de visualiser les données des capteurs et de modifier les consignes selon les besoins, avec une interface responsive et intuitive. Tous les objectifs définis ont été atteints.
+    </p>
+</div>
+
+<script>
+    // Configuration pour l'export PDF
+    document.getElementById('exportPDF').addEventListener('click', function() {
+        // Définir les options pour html2pdf
+        var options = {
+            margin: 10,
+            filename: 'Fiche_Recette_Responsable_GTB.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+
+        // Sélectionner le contenu à exporter
+        var element = document.getElementById('content-to-export');
+        
+        // Générer le PDF
+        html2pdf().from(element).set(options).save();
+    });
+</script>
+
+</body>
+</html>
