@@ -5,38 +5,80 @@
     <title>Fiche Recette - Service GTB</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f9f9f9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+            padding: 0 26px;
+            line-height: 22px;
+            word-wrap: break-word;
             color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
         }
-        h1, h2 {
+        
+        h1 {
+            padding-bottom: 0.3em;
+            line-height: 1.2;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-color: rgba(0, 0, 0, 0.18);
             text-align: center;
         }
+        
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
         table {
-            width: 100%;
             border-collapse: collapse;
+            width: 100%;
             margin: 20px 0;
         }
-        table, th, td {
-            border: 1px solid #aaa;
-        }
-        th, td {
-            padding: 10px;
+        
+        table > thead > tr > th {
             text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.69);
         }
-        th {
-            background-color: #eee;
+        
+        table > thead > tr > th,
+        table > thead > tr > td,
+        table > tbody > tr > th,
+        table > tbody > tr > td {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
         }
-        .section {
-            margin: 40px 0;
+        
+        table > tbody > tr + tr > td {
+            border-top: 1px solid rgba(0, 0, 0, 0.18);
         }
-        .center {
-            text-align: center;
-        }
+        
         hr {
-            border: 1px solid #ccc;
+            border: 0;
+            height: 2px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+            margin: 30px 0;
         }
+        
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+            padding: 16px;
+        }
+        
+        blockquote {
+            margin: 0 7px 0 5px;
+            padding: 0 16px 0 10px;
+            border-left: 5px solid #ddd;
+        }
+        
         .export-button {
             display: block;
             width: 200px;
@@ -51,13 +93,27 @@
             text-align: center;
             transition: background-color 0.3s;
         }
+        
         .export-button:hover {
             background-color: #45a049;
         }
+        
         @media print {
             .export-button {
                 display: none;
             }
+        }
+        
+        ul {
+            margin-left: 20px;
+        }
+        
+        ul li {
+            margin-bottom: 5px;
+        }
+        
+        p {
+            line-height: 1.5;
         }
     </style>
     <!-- Inclure la bibliothèque html2pdf -->
@@ -71,29 +127,27 @@
 </button>
 
 <div id="content-to-export">
-    <div class="center">
-        <h1>📄 Fiche Recette - <strong>Service GTB</strong> 📄</h1>
-        <p><strong>Réalisé par :</strong> Casalot Romain<br>
-        <strong>Période :</strong> 28 Janvier 2025 - 23 Mai 2025</p>
-    </div>
+    <h1>📄 Fiche Recette - <strong>Service GTB</strong></h1>
+    <p style="text-align: center;"><strong>Réalisé par :</strong> Casalot Romain<br>
+    <strong>Période :</strong> 28 Janvier 2025 - 23 Mai 2025</p>
 
     <hr>
 
-    <div class="center">
-        <h2>1. Informations Générales</h2>
-    </div>
+    <h2>1. Informations Générales</h2>
 
     <table>
-        <tr><th>Élément</th><th>Détails</th></tr>
-        <tr><td><strong>Nom du projet</strong></td><td>Service GTB pour bâtiments communaux</td></tr>
-        <tr><td><strong>Personne en charge</strong></td><td>Casalot Romain</td></tr>
+        <thead>
+            <tr><th>Élément</th><th>Détails</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Nom du projet</strong></td><td>Service GTB pour bâtiments communaux</td></tr>
+            <tr><td><strong>Personne en charge</strong></td><td>Casalot Romain</td></tr>
+        </tbody>
     </table>
 
     <hr>
 
-    <div class="center">
-        <h2>2. Environnement de Test</h2>
-    </div>
+    <h2>2. Environnement de Test</h2>
 
     <ul>
         <li><strong>Navigateurs</strong> : Chrome, Edge, Firefox, Safari</li>
@@ -103,9 +157,7 @@
 
     <hr>
 
-    <div class="center">
-        <h2>3. Pré-requis</h2>
-    </div>
+    <h2>3. Pré-requis</h2>
 
     <ul>
         <li>🏠 Passerelle LoRaWAN Milesight UG65-868M-EA</li>
@@ -116,9 +168,7 @@
 
     <hr>
 
-    <div class="center">
-        <h2>4. Défis Techniques</h2>
-    </div>
+    <h2>4. Défis Techniques</h2>
 
     <p>
     Permettre à différents utilisateurs d'avoir un affichage différent selon le grade de la personne :
@@ -139,28 +189,28 @@
 
     <hr>
 
-    <div class="center">
-        <h2>5. Suivi des Tâches</h2>
-    </div>
+    <h2>5. Suivi des Tâches</h2>
 
     <table>
-        <tr>
-            <th>Tâche ou Livrable</th><th>Propriétaire</th><th>Statut</th><th>Remarques</th>
-        </tr>
-        <tr><td>Rédaction des différents documents et diagrammes</td><td>Casalot Romain</td><td>⏳ EN COURS</td><td></td></tr>
-        <tr><td>Conception de l'interface utilisateur</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>Développement des interfaces</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>Style et responsivité</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>Intégration avec le backend</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>1ère phase de tests et validation</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
-        <tr><td>2nde phase de tests et validation</td><td>Casalot Romain</td><td>✅ FAIT</td><td></td></tr>
+        <thead>
+            <tr>
+                <th>Tâche ou Livrable</th><th>Propriétaire</th><th>Pré-requis</th><th>Statut</th><th>Remarques</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Rédaction des différents documents et diagrammes</td><td>Casalot Romain</td><td>Connaissance du sujet, analyse des besoins</td><td>⏳ EN COURS</td><td></td></tr>
+            <tr><td>Conception de l'interface utilisateur</td><td>Casalot Romain</td><td>Installation de l'environnement de travail nécessaire<td>✅ FAIT</td><td></td></tr>
+            <tr><td>Développement des interfaces</td><td>Casalot Romain</td><td>Environnement de travail fonctionnel, connexion à une base de données afin de permettre une connexion au compte</td><td>✅ FAIT</td><td></td></tr>
+            <tr><td>Style et responsivité</td><td>Casalot Romain</td><td>Pages fonctionnelles</td><td>✅ FAIT</td><td></td></tr>
+            <tr><td>Intégration avec le backend</td><td>Casalot Romain</td><td>Toutes les pages doivent être fonctionnelles et doivent pouvoir communiquer entre elles, tout doit être adapté en amont pour faciliter l'intégration</td><td>✅ FAIT</td><td></td></tr>
+            <tr><td>1ère phase de tests et validation</td><td>Casalot Romain</td><td></td><td>✅ FAIT</td><td></td></tr>
+            <tr><td>2nde phase de tests et validation</td><td>Casalot Romain</td><td></td><td>✅ FAIT</td><td></td></tr>
+        </tbody>
     </table>
 
     <hr>
 
-    <div class="center">
-        <h2>6. Conclusion</h2>
-    </div>
+    <h2>6. Conclusion</h2>
 
     <p>
     Le projet de Service GTB pour bâtiments communaux a été conçu et développé avec succès. Le système permet maintenant une gestion différenciée selon les rôles des utilisateurs : les administrateurs peuvent gérer les bâtiments, capteurs et utilisateurs; les responsables peuvent visualiser et ajuster les paramètres de chauffage; et les utilisateurs standards peuvent consulter les données de température. L'interface responsive s'adapte parfaitement à tous les types d'appareils, offrant une expérience utilisateur optimale sur ordinateurs, tablettes et smartphones. La majorité des objectifs ont été atteints, avec seulement la finalisation de la documentation technique encore en cours. Les deux phases de tests ont validé le bon fonctionnement du système dans les environnements cibles.
